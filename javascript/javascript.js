@@ -1,15 +1,3 @@
-
-var iframe1 = true;
-var iframe2 = false;
-var iframe3 = false;
-var iframe4 = false;
-var illumination1 = true;
-var illumination2 = false;
-var illumination3 = false;
-var illumination4 = false;
-var illumination5 = false;
-var illumination6 = false;
-var illumination7 = false;
 var works_list = document.getElementsByClassName("works_list")[0];
 var works_list_item = document.getElementsByClassName("works_list_item");
 var num = 0;
@@ -21,6 +9,8 @@ var display_iframe3_left = false;
 var display_iframe4 = false;
 
 var iframes = document.getElementsByClassName("iframes_list")[0];
+
+var illumination_list = document.getElementsByClassName("illumination_list")[0];
 
 function works_list_visible(){
 	works_list.classList.add("works_list_display");
@@ -100,62 +90,72 @@ function iframes_left(){
 	}
 }
 
-function illumination_left(){
-	if (illumination2 == true) {
-		document.getElementById("illumination_list").className = "display_illumination1";
-		illumination2 = false;
-		illumination1 = true;
-		document.getElementById("illumination_left_arrow").style.visibility = "hidden";
-	} else if (illumination3 == true){
-		document.getElementById("illumination_list").className = "display_illumination2_left";
-		illumination3 = false;
-		illumination2 = true;
-	} else if (illumination4 == true){
-		document.getElementById("illumination_list").className = "display_illumination3_left";
-		illumination4 = false;
-		illumination3 = true;
-	} else if (illumination5 == true){
-		document.getElementById("illumination_list").className = "display_illumination4_left";
-		illumination5 = false;
-		illumination4 = true;
-	} else if (illumination6 == true){
-		document.getElementById("illumination_list").className = "display_illumination5_left";
-		illumination6 = false;
-		illumination5 = true;
-	} else if (illumination7 == true){
-		document.getElementById("illumination_list").className = "display_illumination6_left";
-		illumination7 = false;
-		illumination6 = true;
-		document.getElementById("illumination_right_arrow").style.visibility = "visible";
-	}
+function illumination_img1(){
+	illumination_list.classList.add("illumination_img1");
+	illumination_list.classList.remove("illumination_img2");
+	illumination_list.classList.remove("illumination_img3");
+	illumination_list.classList.remove("illumination_img4");
+	illumination_list.classList.remove("illumination_img5");
+	illumination_list.classList.remove("illumination_img6");
+	illumination_list.classList.remove("illumination_img7");
 }
 
-function illumination_right(){
-	if (illumination1 == true) {
-		document.getElementById("illumination_list").className = "display_illumination2_right";
-		illumination1 = false;
-		illumination2 = true;
-		document.getElementById("illumination_left_arrow").style.visibility = "visible";
-	} else if (illumination2 == true){
-		document.getElementById("illumination_list").className = "display_illumination3_right";
-		illumination2 = false;
-		illumination3 = true;
-	} else if (illumination3 == true){
-		document.getElementById("illumination_list").className = "display_illumination4_right";
-		illumination3 = false;
-		illumination4 = true;
-	} else if (illumination4 == true){
-		document.getElementById("illumination_list").className = "display_illumination5_right";
-		illumination4 = false;
-		illumination5 = true;
-	} else if (illumination5 == true){
-		document.getElementById("illumination_list").className = "display_illumination6_right";
-		illumination5 = false;
-		illumination6 = true;
-	} else if (illumination6 == true){
-		document.getElementById("illumination_list").className = "display_illumination7";
-		illumination6 = false;
-		illumination7 = true;
-		document.getElementById("illumination_right_arrow").style.visibility = "hidden";
-	}
+function illumination_img2(){
+	illumination_list.classList.remove("illumination_img1");
+	illumination_list.classList.add("illumination_img2");
+	illumination_list.classList.remove("illumination_img3");
+	illumination_list.classList.remove("illumination_img4");
+	illumination_list.classList.remove("illumination_img5");
+	illumination_list.classList.remove("illumination_img6");
+	illumination_list.classList.remove("illumination_img7");
+}
+
+function illumination_img3(){
+	illumination_list.classList.remove("illumination_img1");
+	illumination_list.classList.remove("illumination_img2");
+	illumination_list.classList.add("illumination_img3");
+	illumination_list.classList.remove("illumination_img4");
+	illumination_list.classList.remove("illumination_img5");
+	illumination_list.classList.remove("illumination_img6");
+	illumination_list.classList.remove("illumination_img7");
+}
+
+function illumination_img4(){
+	illumination_list.classList.remove("illumination_img1");
+	illumination_list.classList.remove("illumination_img2");
+	illumination_list.classList.remove("illumination_img3");
+	illumination_list.classList.add("illumination_img4");
+	illumination_list.classList.remove("illumination_img5");
+	illumination_list.classList.remove("illumination_img6");
+	illumination_list.classList.remove("illumination_img7");
+}
+
+function illumination_img5(){
+	illumination_list.classList.remove("illumination_img1");
+	illumination_list.classList.remove("illumination_img2");
+	illumination_list.classList.remove("illumination_img3");
+	illumination_list.classList.remove("illumination_img4");
+	illumination_list.classList.add("illumination_img5");
+	illumination_list.classList.remove("illumination_img6");
+	illumination_list.classList.remove("illumination_img7");
+}
+
+function illumination_img6(){
+	illumination_list.classList.remove("illumination_img1");
+	illumination_list.classList.remove("illumination_img2");
+	illumination_list.classList.remove("illumination_img3");
+	illumination_list.classList.remove("illumination_img4");
+	illumination_list.classList.remove("illumination_img5");
+	illumination_list.classList.add("illumination_img6");
+	illumination_list.classList.remove("illumination_img7");
+}
+
+function illumination_img7(){
+	illumination_list.classList.remove("illumination_img1");
+	illumination_list.classList.remove("illumination_img2");
+	illumination_list.classList.remove("illumination_img3");
+	illumination_list.classList.remove("illumination_img4");
+	illumination_list.classList.remove("illumination_img5");
+	illumination_list.classList.remove("illumination_img6");
+	illumination_list.classList.add("illumination_img7");
 }
