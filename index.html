@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfoli</title>
+         <meta charset="UTF-8">
+        <link href="css/css.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="background">
+            <nav class="navbar">
+                <div class="home_container">
+					<a class="home" href="index.html">
+						<img class="home_img" src="images/home.png">
+					</a>
+                </div>
+                <ul class="header_list">
+                    
+                    <li class="header_list_item" onmouseleave="works_list_hidden()">
+                        <p class="header_list_text" onmouseover="works_list_visible()">
+                            WORKS
+                        </p>
+                        
+                    </li>
+                    
+                    <li class="header_list_item">
+						<a class="header_list_text" href="about.html">
+							ABOUT
+						</a>
+                    </li>
+                    
+                    <li class="header_list_item">
+                        <a class="header_list_text" href="contact.html">
+							CONTACT
+						</a>
+                    </li>
+                </ul>
+                <ul class="works_list" onmouseover="works_list_visible()" onmouseleave="works_list_hidden()">
+                    <li class="works_list_item">
+                        <a class="works_list_text" href="works/2d_animation.html">
+                            2D ANIMATION
+                        </a>
+                    </li>
+                    
+                    <li class="works_list_item">
+                        <a class="works_list_text" href="works/programming.html">
+                            PROGRAMMING
+                        </a>
+                    </li>
+                    
+                    <li class="works_list_item">
+                        <a class="works_list_text" href="works/modeling.html">
+                            MODELING
+                        </a>
+                    </li>
+                    
+                    <li class="works_list_item">
+                        <a class="works_list_text" href="works/web_design.html">
+                            WEB DESIGN
+                        </a>
+                    </li>
+                    
+                    <li class="works_list_item">
+                        <a class="works_list_text" href="works/illumination.html">
+                            ILLUMINATION
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            
+            <main class="main">
+				<section id="section_name">
+					<div id="name_container">
+                        <p id="name">
+                            David Garcia
+                        </p>
+                    </div>
+					<div id="main_text_container">
+                        <p id="main_text">
+                            Programming, Modeling, Web design, Ilummination, Animation
+                        </p>
+                    </div>
+				</section>
+            </main>
+        </div>
+        <script src="javascript/javascript.js"></script>
+    </body>
+</html>

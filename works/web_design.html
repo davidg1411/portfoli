@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfoli</title>
+         <meta charset="UTF-8">
+        <link href="../css/css.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="background">
+            <nav class="navbar">
+                <div class="home_container">
+					<a class="home" href="../index.html">
+						<img class="home_img" src="../images/home.png">
+					</a>
+                </div>
+                <ul class="header_list" onmouseover="show_list()">
+                    
+                    <li class="header_list_item" onmouseleave="works_list_hidden()">
+                        <p class="header_list_text" onmouseover="works_list_visible()">
+                            WORKS
+                        </p>
+                        
+                    </li>
+                    
+                    <li class="header_list_item">
+						<a class="header_list_text" href="../about.html">
+							ABOUT
+						</a>
+                    </li>
+                    
+                    <li class="header_list_item">
+                        <a class="header_list_text" href="../contact.html">
+							CONTACT
+						</a>
+                    </li>
+                </ul>
+                 <ul class="works_list" onmouseover="works_list_visible()" onmouseleave="works_list_hidden()">
+                    <li class="works_list_item">
+                        <a class="works_list_text" href="2d_animation.html">
+                            2D ANIMATION
+                        </a>
+                    </li>
+                    
+                    <li class="works_list_item">
+                        <a class="works_list_text" href="programming.html">
+                            PROGRAMMING
+                        </a>
+                    </li>
+                    
+                    <li class="works_list_item">
+                        <a class="works_list_text" href="modeling.html">
+                            MODELING
+                        </a>
+                    </li>
+                    
+                    <li class="works_list_item">
+                        <a class="works_list_text" href="web_design.html">
+                            WEB DESIGN
+                        </a>
+                    </li>
+                    
+                    <li class="works_list_item">
+                        <a class="works_list_text" href="illumination.html">
+                            ILLUMINATION
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            
+            <main class="main">
+				<section class="section_title">
+					<p class="works_title">
+						WEB DESIGN
+					</p>
+				</section>
+				<section id="section_web_design">
+					<ul class="iframes_list">
+						<li class="iframes_list_item" id="iframe_item1">
+							<iframe class="iframes" id="iframe1" src="https://aventura-pokemon.neocities.org/index.html" scrolling="no">
+							</iframe>
+						</li>
+
+						<li class="iframes_list_item" id="iframe_item2">
+							<iframe class="iframes" id="iframe2" src="https://integracio-joc.neocities.org/" scrolling="no">
+							</iframe>
+						</li>
+
+						<li class="iframes_list_item" id="iframe_item3">
+							<iframe class="iframes" id="iframe3" src="https://museu-monster-iframe.neocities.org/" scrolling="no">
+							</iframe>
+						</li>
+
+						<li class="iframes_list_item" id="iframe_item4">
+							<iframe class="iframes" id="iframe4" src="https://davidg1411.github.io/historia-interactiva/" scrolling="no">
+							</iframe>
+						</li>
+					
+					</ul>
+					
+					<div id="web_arrows_container">
+						<img class="web_arrows" id="left_arrow" src="../images/arrow_left.png" onclick="iframes_left()">
+
+						<img class="web_arrows" id="right_arrow" src="../images/arrow_right.png" onclick="iframes_right()">
+					</div>
+					
+				</section>
+            </main>
+        </div>
+        <script src="../javascript/javascript.js"></script>
+    </body>
+</html>

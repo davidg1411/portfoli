@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfoli</title>
+         <meta charset="UTF-8">
+        <link href="../css/css.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="background">
+            <nav class="navbar">
+                <div class="home_container">
+					<a class="home" href="../index.html">
+						<img class="home_img" src="../images/home.png">
+					</a>
+                </div>
+                <ul class="header_list" onmouseover="show_list()">
+                    
+                    <li class="header_list_item" onmouseleave="works_list_hidden()">
+                        <p class="header_list_text" onmouseover="works_list_visible()">
+                            WORKS
+                        </p>
+                        
+                    </li>
+                    
+                    <li class="header_list_item">
+						<a class="header_list_text" href="../about.html">
+							ABOUT
+						</a>
+                    </li>
+                    
+                    <li class="header_list_item">
+                        <a class="header_list_text" href="../contact.html">
+							CONTACT
+						</a>
+                    </li>
+                </ul>
+                 <ul class="works_list" onmouseover="works_list_visible()" onmouseleave="works_list_hidden()">
+                    <li class="works_list_item">
+                        <a class="works_list_text" href="2d_animation.html">
+                            2D ANIMATION
+                        </a>
+                    </li>
+                    
+                    <li class="works_list_item">
+                        <a class="works_list_text" href="programming.html">
+                            PROGRAMMING
+                        </a>
+                    </li>
+                    
+                    <li class="works_list_item">
+                        <a class="works_list_text" href="modeling.html">
+                            MODELING
+                        </a>
+                    </li>
+                    
+                    <li class="works_list_item">
+                        <a class="works_list_text" href="web_design.html">
+                            WEB DESIGN
+                        </a>
+                    </li>
+                    
+                    <li class="works_list_item">
+                        <a class="works_list_text" href="illumination.html">
+                            ILLUMINATION
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            
+            <main class="main">
+				<section class="section_title">
+					<p class="works_title">
+						ILLUMINATION
+					</p>
+				</section>
+				<section id="section_illumination">
+					<ul id="illumination_list">
+						<li class="illumination_list_item">
+							<img class="illumination_imgs" src="../images/illumination1.png">
+						</li>
+						
+						<li class="illumination_list_item">
+							<img class="illumination_imgs" src="../images/illumination2.png">
+						</li>
+						
+						<li class="illumination_list_item">
+							<img class="illumination_imgs" src="../images/illumination3.png">
+						</li>
+						
+						<li class="illumination_list_item">
+							<img class="illumination_imgs" src="../images/illumination4.png">
+						</li>
+						
+						<li class="illumination_list_item">
+							<img class="illumination_imgs" src="../images/illumination5.png">
+						</li>
+						
+						<li class="illumination_list_item">
+							<img class="illumination_imgs" src="../images/illumination6.png">
+						</li>
+						
+						<li class="illumination_list_item">
+							<img class="illumination_imgs" src="../images/illumination7.png">
+						</li>
+					</ul>
+					<div id="illumination_arrows_container">
+						<img class="illumination_arrows" id="illumination_left_arrow" src="../images/arrow_left.png" onclick="illumination_left()">
+						<img class="illumination_arrows" id="illumination_right_arrow" src="../images/arrow_right.png" onclick="illumination_right()">
+					</div>
+				</section>
+            </main>
+        </div>
+        <script src="../javascript/javascript.js"></script>
+    </body>
+</html>
